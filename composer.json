@@ -19,13 +19,14 @@
         "aryess/phpmatrixsdk": "self.version"
     },
     "require": {
-        "php": "~7.2",
-        "guzzlehttp/guzzle": "^6.3",
+        "php": "^7.2.5 || ^8.0",
+        "guzzlehttp/guzzle": "7.2.0",
         "rappasoft/laravel-helpers": "^1.0",
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit" : ">=5.4.3"
+        "phpunit/php-code-coverage": "^7.0",
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
@@ -46,6 +47,9 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.5"
+        }
     }
 }

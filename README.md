@@ -1,7 +1,7 @@
 # Matrix client SDK for php
 [![Software License][ico-license]](LICENSE.md)
 
-This is a Matrix client-server SDK for php 7.0+, mostly copied from [matrix-org/matrix-python-sdk][python-pck]
+This is a Matrix client-server SDK for php 7.2.5+, mostly copied from [matrix-org/matrix-python-sdk][python-pck]
 
 This package is still a work in progress, and at the current time, not everything has been ported:
 - Missing E2E encryption, need php bindings for the OLM library
@@ -42,15 +42,15 @@ $matrix = new MatrixHttpApi("http://localhost:8008", $sometoken);
 $response = $matrix->sendMessage("!roomid:matrix.org", "Hello!");
 ```
 
-##Structure
+## Structure
 The SDK is split into two modules: ``api`` and ``client``.
 
-###API
+### API
 This contains the raw HTTP API calls and has minimal business logic. You can
 set the access token (``token``) to use for requests as well as set a custom
 transaction ID (``txn_id``) which will be incremented for each request.
 
-###Client
+### Client
 This encapsulates the API module and provides object models such as ``Room``.
 
 
