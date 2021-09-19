@@ -891,5 +891,12 @@ class Room {
         return $this->client->api();
     }
 
+    /**
+     * @return string the matrix roomId of this room.
+     */
+    public function getRoomId(): string
+    {
+        return $this->roomId;
+    }
 
 }
